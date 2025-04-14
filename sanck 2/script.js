@@ -20,6 +20,10 @@ for (const currentteam of footballteam) {
   currentteam.puntiFatti = randomNamber(1, 50);
   currentteam.falliSubiti = randomNamber(1, 50);
   newteamGroup.push(currentteam.nome, currentteam.falliSubiti);
+  newteamGroup.push({
+    pippo: "ciao",
+    valure: 9,
+  });
   //   console.log(currentteam.puntiFatti);
   //   console.log(currentteam.falliSubiti);
 }

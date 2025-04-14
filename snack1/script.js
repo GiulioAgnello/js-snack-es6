@@ -2,10 +2,6 @@
 
 const bicycles = [
   {
-    name: "bikeone",
-    peso: 25,
-  },
-  {
     name: "biketwo",
     peso: 35,
   },
@@ -18,6 +14,10 @@ const bicycles = [
     peso: 43,
   },
   {
+    name: "bikeone",
+    peso: 25,
+  },
+  {
     name: "bikefive",
     peso: 38,
   },
@@ -27,10 +27,14 @@ console.log(bicycles);
 
 // stampiamo le bici con il peso minore
 
-console.log(bicycles[0]);
+// Calcoli l'elemento con la dimensione minore
 
-for (const lowweightbyke of bicycles) {
-  if (lowweightbyke.peso < 40) {
-    console.log(lowweightbyke);
+let minnumber = bicycles[0]; // object
+for (let i = 1; i < bicycles.length; i++) {
+  const currentNumber = bicycles[i]; // object
+  if (currentNumber.peso < minnumber.peso) {
+    minnumber = currentNumber; // object
   }
 }
+
+console.log(minnumber);
