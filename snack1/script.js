@@ -27,6 +27,8 @@ console.log(bicycles);
 
 // stampiamo le bici con il peso minore
 
+console.log(bicycles[0]);
+
 for (const lowweightbyke of bicycles) {
   if (lowweightbyke.peso < 40) {
     console.log(lowweightbyke);
