@@ -15,16 +15,15 @@ const footballteam = [
 // console.log(footballteam);
 
 // pusho i numeri random
-
+let newteamGroup = [];
 for (const currentteam of footballteam) {
   currentteam.puntiFatti = randomNamber(1, 50);
   currentteam.falliSubiti = randomNamber(1, 50);
-
+  newteamGroup.push(currentteam.nome, currentteam.falliSubiti);
   //   console.log(currentteam.puntiFatti);
   //   console.log(currentteam.falliSubiti);
 }
-console.log(footballteam);
+// console.log(footballteam);
+console.log(newteamGroup);
 
 // creo nuovo array
-
-let newteamGroup = [];
